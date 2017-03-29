@@ -1,0 +1,23 @@
+title = "Blog Forseti Tecnologia"
+baseURL  = "https://git-forseti.github.io/blog"
+theme = "cocoa"
+languageCode = "en-us"
+buildDrafts = false
+publishdir = "public"
+author = "Forseti Tecnologia e Comunicação"
+canonifyURLs = true
+
+
+[params]
+dateform = "2 Jan, 2006"
+dateformfull = "2 Mon Jan 2006 15:04:05 MST"
+description = "Passando o conhecimento para a internet"
+logofile = ""
+faviconfile = ""
+highlightjs = true
+progressively = true
+lang = "pt-br"
+github = "https://github.com/git-forseti/"
+email = "forseti@forseti.com.br"
+linkedin = ""
+twitter = ""
