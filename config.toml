@@ -1,11 +1,12 @@
-title = "Blog Forseti Tecnologia"
-baseURL  = "https://git-forseti.github.io/blog"
-theme = "cocoa"
+Subtitle = "Blog Forseti Tecnologia"
+description = "Compartilhando problemas enfrentados pela equipe da Forseti"
+baseURL  = "https://git-forseti.github.io/"
+theme = "bleak"
 languageCode = "en-us"
 buildDrafts = false
 publishdir = "public"
 author = "Forseti Tecnologia e Comunicação"
-canonifyURLs = true
+canonifyURLs = false
 
 
 [params]
