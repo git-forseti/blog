@@ -3,6 +3,7 @@ date = "2017-03-29T13:18:56-03:00"
 title = "Iniciando com Hugo"
 Description = "Iniciando com o gerador de HTML Hugo"
 draft = true
+image = "images/hugo.png"
 +++
 
 [Hugo](https://gohugo.io/) é um gerador de html estatico, desenvolvido na linguagem de programação Go (Golang) o conteudo é escrito em Markdown se mostrando rapido na geração de html.O intuito deste post é fazer o basico com essa ótima ferramenta, criar um projeto novo e fazer um post, então vamos iniciar.
