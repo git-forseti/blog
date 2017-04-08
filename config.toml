@@ -1,24 +1,24 @@
-Subtitle = "Blog Forseti Tecnologia"
-description = "Compartilhando problemas enfrentados pela equipe da Forseti"
 baseURL  = "https://git-forseti.github.io/"
 theme = "bleak"
 languageCode = "en-us"
 buildDrafts = false
 publishdir = "public"
-author = "Forseti Tecnologia e Comunicação"
 canonifyURLs = false
+title = "Blog da Forseti"
 
 
 [params]
+cover = "/images/php-code.jpg"
+Subtitle = "Equipe da Forseti passando para frente o conhecimento"
+description = "Compartilhando conhecimento"
 dateform = "2 Jan, 2006"
 dateformfull = "2 Mon Jan 2006 15:04:05 MST"
-description = "Passando o conhecimento para a internet"
-logofile = ""
-faviconfile = ""
-highlightjs = true
-progressively = true
+logo = "/images/forseti.jpg"
 lang = "pt-br"
 github = "https://github.com/git-forseti/"
 email = "forseti@forseti.com.br"
 linkedin = ""
 twitter = ""
+
+[params.author]
+    userName = "Forseti Tecnologia e Comunicação"

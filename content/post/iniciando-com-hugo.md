@@ -1,9 +1,15 @@
 +++
 date = "2017-03-29T13:18:56-03:00"
+comments = true
 title = "Iniciando com Hugo"
-Description = "Iniciando com o gerador de HTML Hugo"
+slug = ""
+tags = ["hugo", "html", "go"]
+author = "Jhonata Menezes"
+menu = "teste"
+description = "Iniciando com o gerador de HTML Hugo"
 draft = true
-image = "images/hugo.png"
+share = true
+image = "/images/hugo.png"
 +++
 
 [Hugo](https://gohugo.io/) é um gerador de html estatico, desenvolvido na linguagem de programação Go (Golang) o conteudo é escrito em Markdown se mostrando rapido na geração de html.O intuito deste post é fazer o basico com essa ótima ferramenta, criar um projeto novo e fazer um post, então vamos iniciar.
@@ -17,7 +23,7 @@ wget "https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19-64bit.deb"
 Executando 'hugo version' deverá aparecer a versão do Hugo, estou utilizando a 0.19.
 
 Para criar um diretorio onde sera seu espaço de trabalho execute: `hugo new site nome_do_meu_blog` e sera criada uma pasta nome_do_meu_blog com uma hierarquia de diretorios. Executando `hugo --help` é possivel ver outras opções e parametros do hugo.
-`hugo new post/iniciando-com-hugo` ira criar uma pasta `post` dentro de `content` com um arquivo chamado `inciando-com-hugo.md`. Este arquivo é onde deve ser feito a edição, para publicação de conteudo.
+`hugo new post/iniciando-com-hugo.md` ira criar uma pasta `post` dentro de `content` com um arquivo chamado `inciando-com-hugo.md`. Este arquivo é onde deve ser feito a edição, para publicação de conteudo.
 
 Um exemplo simples de conteudo em draft (esboço)
 ```markdown
@@ -76,7 +82,7 @@ Para utiliza o [Github Pages](https://pages.github.com/) para arquivos estaticos
 
 Até a próxima.
 
-***
+___
 
 Jhonata Menezes [Github](https://github.com/jhonata-menezes) [Linkedin](https://www.linkedin.com/in/jhonata-santos-a3659011a/)
 
