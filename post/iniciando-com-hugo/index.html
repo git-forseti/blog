@@ -1,27 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
 
     <head>
-	<meta name="generator" content="Hugo 0.19" />
 
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content=" Blog da Forseti" />
+        <meta property="og:title" content=" Iniciando com Hugo &middot;  Blog da Forseti" />
         <meta property="og:site_name" content="Blog da Forseti" />
-        <meta property="og:url" content="https://git-forseti.github.io/blog/" />
+        <meta property="og:url" content="https://git-forseti.github.io/blog/post/iniciando-com-hugo/" />
 
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta property="og:article:published_time" content="2017-03-29T13:18:56-03:00" />
+        <meta property="og:article:tag" content="hugo" />
+        <meta property="og:article:tag" content="html" />
+        <meta property="og:article:tag" content="go" />
+        
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@" />
+        <meta name="twitter:creator" content="@" />
+        <meta name="twitter:title" content="Iniciando com Hugo" />
+        <meta name="twitter:description" content="Iniciando com o gerador de HTML Hugo" />
+        <meta name="twitter:url" content="https://git-forseti.github.io/blog/post/iniciando-com-hugo/" />
     
 
-        <title> Blog da Forseti</title>
+        <title> Iniciando com Hugo &middot;  Blog da Forseti</title>
 
         <link rel="preload" href="https://git-forseti.github.io/blog/js/main.js" as="script" />
         <link rel="preload" href="https://git-forseti.github.io/blog/css/main.css" as="style" />
 
     
-        <meta name="description" content="Compartilhando conhecimento" />
+        <meta name="description" content="Iniciando com o gerador de HTML Hugo" />
     
 
     
@@ -36,12 +48,59 @@
         
 
     
-
-    
         <link href="https://git-forseti.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Blog da Forseti" />
     
-        <link rel="canonical" href="https://git-forseti.github.io/blog/" />
 
+    
+        <link rel="canonical" href="https://git-forseti.github.io/blog/post/iniciando-com-hugo/" />
+
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://git-forseti.github.io/blog/post/iniciando-com-hugo/"
+        },
+        "headline": "Iniciando com Hugo",
+        "description": "Iniciando com o gerador de HTML Hugo",
+        "author": {
+            "@type": "Person",
+            "name": " ",
+            "url": "http://profiles.google.com/?rel=author",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https:",
+              "height": 80,
+              "width": 80
+            }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://git-forseti.github.io/blog/",
+          "name": "Blog da Forseti",
+          "url": "https://git-forseti.github.io/blog/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https:",
+            "height": 80,
+            "width": 80
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://git-forseti.github.io/images/hugo.png",
+          "height": 133,
+          "width": 200
+        },
+        "datePublished": "2017-03-29",
+        "dateModified": "2017-03-29",
+        "wordCount": 573,
+        "keywords": ["hugo","html","go"]
+    }
+    </script>
 
 
     
@@ -49,9 +108,9 @@
     
     
       var disqus_shortname = 'YzdQH2bh5ANV3bW90ae8etKTt1U3Xi77ZPEYBlGOeK2uPu5bnk2yS3JTMhaQzr00';
-      var disqus_identifier = 'https:\/\/git-forseti.github.io\/blog\/';
-      var disqus_title = 'Blog da Forseti';
-      var disqus_url = 'https:\/\/git-forseti.github.io\/blog\/';
+      var disqus_identifier = 'https:\/\/git-forseti.github.io\/blog\/post\/iniciando-com-hugo\/';
+      var disqus_title = 'Iniciando com Hugo';
+      var disqus_url = 'https:\/\/git-forseti.github.io\/blog\/post\/iniciando-com-hugo\/';
     
     </script>
     
@@ -83,76 +142,168 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
               </a>
             </div>
             <div class="nav-menu">
-              <a class="rss" href="https://git-forseti.github.io/blog/index.xml">
+              <a class="rss" href="">
                 <i class="icon-rss"></i>
               </a>
+                
+                <a class="menu" data-action="toc" data-target="toc"><i class="icon-location"></i></a>
                 
                 
             </div>
           </nav>
 
 
-	<header id="header" class="header has-cover">
+<main class="content" role="main">
+	<article class="post">
 		<div class="inner">
-			<a class="header-title" href="https://git-forseti.github.io/blog/">
-				<h1 class="header-name">Blog da Forseti</h1>
-				
-					<span class="header-description">Equipe da Forseti passando para frente o conhecimento</span>
-				
-			</a>
-		</div>
-		
-		<div class="header-cover blured-image" style="background-color: darkgreen; background-image: url(/images/cover.low.jpg)" data-src="images/php-code.jpg"></div>
-		
-	</header>
 
-	<div id="post-index" class="container">
+			<div id="push">
 
-		<main class="content" role="main">
+  			<header class="post-header">
+  				<span class="post-meta">
+					<span class="post-date">29 Mar 2017</span> <span> por Jhonata Menezes</span> <span class="reading-time">| <span class="estimated-reading-time">3 min.</span> (<span class="word-count">573</span> words)</span></span>
+  				</span>
+  				<div class="clear"></div>
+  				<h1 class="post-title">Iniciando com Hugo</h1>
+  			</header>
 
-			<div class="post-list">
-				<div id="push">
+  			<section class="post-content">
+  				
 
-			
+<p><a href="https://gohugo.io/">Hugo</a> é um gerador de html estatico, desenvolvido na linguagem de programação Go (Golang) o conteudo é escrito em Markdown se mostrando rapido na geração de html.O intuito deste post é fazer o basico com essa ótima ferramenta, criar um projeto novo e fazer um post, então vamos iniciar.</p>
 
-			
-			  
-<article class="post">
+<h3 id="instalação">Instalação</h3>
 
-	<div class="inner">
-		<a class="post-link" href="https://git-forseti.github.io/blog/post/iniciando-com-hugo/"></a>
-		
-		<figure class="post-image">
-			<a href="https://git-forseti.github.io/blog/post/iniciando-com-hugo/"><img src="https://git-forseti.github.io/blog/images/hugo.png" alt="" /></a>
-		</figure>
-		
-		<span class="post-meta">
-			<span class="post-date">29 Mar 2017</span>
-		</span>
-		<h2 class="post-title"><a href="https://git-forseti.github.io/blog/post/iniciando-com-hugo/">Iniciando com Hugo</a></h2>
-		<p class="post-excerpt">Iniciando com o gerador de HTML Hugo&hellip;</p>
-		<span class="post-more"><a href="https://git-forseti.github.io/blog/post/iniciando-com-hugo/">Read More <i class="icon-arrow-right"></i></a></span>
-	</div>
-</article>
+<p>Para instalar Hugo é necessario apenas seguir os procedimentos demonstrados na documentação <a href="https://gohugo.io/overview/installing/">https://gohugo.io/overview/installing/</a>
+no meu caso que estou usando Ubuntu irei usar o pacote deb hugo_0.19-64bit.deb que foi obtido atraves do projeto no <a href="https://github.com/spf13/hugo/releases">github</a></p>
 
-			
+<pre><code class="language-bash">wget &quot;https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19-64bit.deb&quot; &amp;&amp; sudo dpkg -i hugo_0.19-64bit.deb
+</code></pre>
 
-				</div>
+<p>Executando &lsquo;hugo version&rsquo; deverá aparecer a versão do Hugo, estou utilizando a 0.19.</p>
+
+<p>Para criar um diretorio onde sera seu espaço de trabalho execute: <code>hugo new site nome_do_meu_blog</code> e sera criada uma pasta nome_do_meu_blog com uma hierarquia de diretorios. Executando <code>hugo --help</code> é possivel ver outras opções e parametros do hugo.
+<code>hugo new post/iniciando-com-hugo.md</code> ira criar uma pasta <code>post</code> dentro de <code>content</code> com um arquivo chamado <code>inciando-com-hugo.md</code>. Este arquivo é onde deve ser feito a edição, para publicação de conteudo.</p>
+
+<p>Um exemplo simples de conteudo em draft (esboço)</p>
+
+<pre><code class="language-markdown">+++
+date = &quot;2017-03-29T13:18:56-03:00&quot;
+title = &quot;Iniciando com Hugo&quot;
+Description = &quot;Iniciando com o gerador de HTML Hugo&quot;
+draft = true
++++
+
+[Hugo](https://gohugo.io/) é um gerador de html estatico...
+</code></pre>
+
+<p>O conteúdo que esta dentro de +++ se chama <a href="https://gohugo.io/content/front-matter/">front matter</a> são meta dados dentro de um post que é usado pelo tema.</p>
+
+<h3 id="edição-e-visualização">Edição e visualização</h3>
+
+<p>Hugo contem um servidor web embutido com live reload <code>hugo server --baseURL &quot;http://192.168.56.12/&quot; --buildDrafts --bind 192.168.56.111</code>
+baseUrl e bind é preciso pois executo dentro de uma maquina virtual, sabendo que o padrão é sempre listar localmente, buildDrafts é para exibir o conteudo em esboço.</p>
+
+<h3 id="config-toml">config.toml</h3>
+
+<p>config.toml é o arquivo de configuração, tem alguns paramentro padrão para o hugo como também para o tema que esta sendo utilizando, segue o meu config.</p>
+
+<pre><code class="language-yaml">Subtitle = &quot;Blog Forseti Tecnologia&quot;
+description = &quot;Compartilhando problemas enfrentados pela equipe da Forseti&quot;
+baseURL  = &quot;https://git-forseti.github.io/&quot;
+theme = &quot;bleak&quot;
+languageCode = &quot;en-us&quot;
+buildDrafts = false
+publishdir = &quot;public&quot;
+author = &quot;Forseti Tecnologia e Comunicação&quot;
+canonifyURLs = false
+
+
+[params]
+dateform = &quot;2 Jan, 2006&quot;
+dateformfull = &quot;2 Mon Jan 2006 15:04:05 MST&quot;
+description = &quot;Passando o conhecimento para a internet&quot;
+logofile = &quot;&quot;
+faviconfile = &quot;&quot;
+highlightjs = true
+progressively = true
+lang = &quot;pt-br&quot;
+github = &quot;https://github.com/git-forseti/&quot;
+email = &quot;forseti@forseti.com.br&quot;
+linkedin = &quot;&quot;
+twitter = &quot;&quot;
+</code></pre>
+
+<p>Todas as configurações são encontradas na <a href="https://gohugo.io/overview/introduction/">documentação</a></p>
+
+<h3 id="temas">Temas</h3>
+
+<p>Os temas são faceis de instalar, existe varios temas montados e bem legais, apenas clonar <code>git clone https://github.com/Zenithar/hugo-theme-bleak.git</code> dentro da pasta themes. No atual momento estou utilizando <code>http://themes.gohugo.io/bleak/</code>, é possivel ter mais de um dentro da pasta, voce tambem pode configurar o padrao dentro de config.toml</p>
+
+<p><a href="http://themes.gohugo.io/">http://themes.gohugo.io/</a></p>
+
+<h3 id="gerando-html">Gerando HTML</h3>
+
+<p>Chamando apenas <code>hugo</code> ele gera os arquivos estaticos dentro da pasta public (porque eu configurei no config.toml), com esses arquivos eu posso enviar para qualquer servidor web e visualiza-los.</p>
+
+<h3 id="extra">Extra</h3>
+
+<p>Para utiliza o <a href="https://pages.github.com/">Github Pages</a> para arquivos estaticos, utilizo um comando simples para enviar, coloco a pasta no gitignore <code>echo &quot;public/&quot; &gt;&gt; .gitignore&quot;</code> e <code>git worktree add -B gh-pages public/ origin/gh-pages</code> (a partir da versão 2.5 do Git), com esse comando a pasta public é uma branch diferente, gere os arquivos estaticos, entre no public/, &lsquo;comita&rsquo; e envie. Ao acessar <a href="https://seu_usuario.github.io/repositorio">https://seu_usuario.github.io/repositorio</a> o conteudo estará disponível. O legal que o custo é zero em servidor ou hospedagem e a publicação mais simples ainda, sendo possivel automatizar o mesmo.</p>
+
+<p>Até a próxima.</p>
+
+<hr />
+
+<p>Jhonata Menezes <a href="https://github.com/jhonata-menezes">Github</a> <a href="https://www.linkedin.com/in/jhonata-santos-a3659011a/">Linkedin</a></p>
+
+  			</section>
+
+  			<footer class="post-footer">
+  				<div class="post-tags">
+            
+            
+                <a href="https://git-forseti.github.io/blog//tags/hugo/">hugo</a>
+            
+                <a href="https://git-forseti.github.io/blog//tags/html/">html</a>
+            
+                <a href="https://git-forseti.github.io/blog//tags/go/">go</a>
+            
+            
+  				</div>
+  				<div class="post-share">
+  					<a class="icon-twitter" href="https://twitter.com/share?text=Iniciando%20com%20Hugo&url=https%3a%2f%2fgit-forseti.github.io%2fblog%2fpost%2finiciando-com-hugo%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  						<span>Twitter</span>
+  					</a>
+  					<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fgit-forseti.github.io%2fblog%2fpost%2finiciando-com-hugo%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+  						<span>Facebook</span>
+  					</a>
+  					<a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fgit-forseti.github.io%2fblog%2fpost%2finiciando-com-hugo%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+  						<span>Google+</span>
+  					</a>
+  				</div>
+  			</footer>
+
+  			<aside class="post-comments">
+    
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
+</aside>
+
+
 			</div>
 
-			<nav id="pagination" class="pagination" role="pagination">
-	<div class="inner">
-	
-		<span class="pagination-info">Page 1 of 1</span>
-	
-		<div class="clear"></div>
-	</div>
-</nav>
+			<nav class="post-nav">
+				
+				
+				<div class="clear"></div>
+			</nav>
 
-
-		</main>
-
-	</div>
+		</div>
+	</article>
+</main>
 
 				<div id="body-class" style="display: none;"></div>
 				<footer id="footer">
@@ -163,6 +314,31 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 				</footer>
 				
 				
+<div id="tocMenu" data-target="toc">
+    <div class="menu-header">
+        <span class="menu-label">Menu</span>
+        <a class="menu-close" data-action="toc" data-target="toc"></a>
+    </div>
+    <div id="toc" class="menu-list">
+        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#instalação">Instalação</a></li>
+<li><a href="#edição-e-visualização">Edição e visualização</a></li>
+<li><a href="#config-toml">config.toml</a></li>
+<li><a href="#temas">Temas</a></li>
+<li><a href="#gerando-html">Gerando HTML</a></li>
+<li><a href="#extra">Extra</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
 
 				<div class="overlay"></div>
 			</div>
