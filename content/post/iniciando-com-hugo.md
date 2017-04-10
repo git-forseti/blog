@@ -7,7 +7,7 @@ tags = ["hugo", "html", "go"]
 author = "Jhonata Menezes"
 menu = "teste"
 description = "Iniciando com o gerador de HTML Hugo"
-draft = true
+draft = false
 share = true
 image = "/images/hugo.png"
 +++

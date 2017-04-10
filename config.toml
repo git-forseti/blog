@@ -3,12 +3,12 @@ theme = "bleak-forseti"
 languageCode = "en-us"
 buildDrafts = false
 publishdir = "public"
-canonifyURLs = false
+canonifyURLs = true
 title = "Blog da Forseti"
 
 
 [params]
-cover = "/images/php-code.jpg"
+cover = "images/php-code.jpg"
 Subtitle = "Equipe da Forseti passando para frente o conhecimento"
 description = "Compartilhando conhecimento"
 dateform = "2 Jan, 2006"
@@ -22,7 +22,7 @@ twitter = ""
 
 googleAnalyticsUserID = "UA-87718763-2"
 domainVerification = "BwRbXye33xQZRZzKlpn8_SZ0-rpspRIU852dQTt7QkA"
-disqus = "YzdQH2bh5ANV3bW90ae8etKTt1U3Xi77ZPEYBlGOeK2uPu5bnk2yS3JTMhaQzr00"
+disqus = "blogforseti"
 
 [params.author]
     userName = "Forseti Tecnologia e Comunicação"
