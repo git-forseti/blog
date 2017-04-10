@@ -1,4 +1,4 @@
-baseURL  = "https://git-forseti.github.io/"
+baseURL  = "https://git-forseti.github.io/blog/"
 theme = "bleak-forseti"
 languageCode = "en-us"
 buildDrafts = false
