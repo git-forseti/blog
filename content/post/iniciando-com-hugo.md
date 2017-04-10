@@ -33,7 +33,10 @@ title = "Iniciando com Hugo"
 Description = "Iniciando com o gerador de HTML Hugo"
 draft = true
 +++
+
+[Hugo](https://gohugo.io/) é um gerador de html estatico...
 ```
+O conteúdo que esta dentro de +++ se chama [front matter](https://gohugo.io/content/front-matter/) são meta dados dentro de um post que é usado pelo tema.
 
 ### Edição e visualização
 Hugo contem um servidor web embutido com live reload `hugo server --baseURL "http://192.168.56.12/" --buildDrafts --bind 192.168.56.111`
