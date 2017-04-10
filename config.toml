@@ -1,5 +1,5 @@
 baseURL  = "https://git-forseti.github.io/"
-theme = "bleak"
+theme = "bleak-forseti"
 languageCode = "en-us"
 buildDrafts = false
 publishdir = "public"
