@@ -1,3 +1,4 @@
-themes/
+themes/*
+!themes/bleak-forseti/
 public/
 .idea
