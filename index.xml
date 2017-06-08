@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog da Forseti</title>
+    <link>https://git-forseti.github.io/blog/</link>
+    <description>Recent content on Blog da Forseti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jun 2017 15:00:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://git-forseti.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dicas de Front-End #1</title>
+      <link>https://git-forseti.github.io/blog/post/dicas-front-1/</link>
+      <pubDate>Thu, 08 Jun 2017 15:00:00 -0300</pubDate>
+      
+      <guid>https://git-forseti.github.io/blog/post/dicas-front-1/</guid>
+      <description>Introdução Em minha experiência jà vi muitas coisas muito boas e também muito ruíns quando se diz respeito ao front-end, existem pessoas que parecem que estão fazendo uma pintura enquanto estão codando mas também tem muitas pessoas que transforma o código em uma verdadeira zona, o que eu quero dizer é, existem detalhes que podem ser pequenos mas que com uma vasta quantidade de código pode nos ajudar a ter um código mais legível e bem estruturado, então criei um tipo de série com coisas que podem nos ajudar a melhorar o código front-end.</description>
+    </item>
+    
+    <item>
+      <title>Iniciando com Hugo</title>
+      <link>https://git-forseti.github.io/blog/post/iniciando-com-hugo/</link>
+      <pubDate>Wed, 29 Mar 2017 13:18:56 -0300</pubDate>
+      
+      <guid>https://git-forseti.github.io/blog/post/iniciando-com-hugo/</guid>
+      <description>Hugo é um gerador de html estatico, desenvolvido na linguagem de programação Go (Golang) o conteudo é escrito em Markdown se mostrando rapido na geração de html.O intuito deste post é fazer o basico com essa ótima ferramenta, criar um projeto novo e fazer um post, então vamos iniciar.
+Instalação Para instalar Hugo é necessario apenas seguir os procedimentos demonstrados na documentação https://gohugo.io/overview/installing/ no meu caso que estou usando Ubuntu irei usar o pacote deb hugo_0.</description>
+    </item>
+    
+  </channel>
+</rss>
