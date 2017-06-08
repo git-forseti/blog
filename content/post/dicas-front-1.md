@@ -4,7 +4,7 @@ comments = true
 title = "Dicas de Front-End #1"
 slug = ""
 tags = ["Dicas", "FrontEnd"]
-author = "[Douglas Julião - DJ](https://github.com/dougjuliao)"
+author = "Douglas Julião - DJ"
 menu = "FrontEnd"
 description = "Algumas dicas úteis no desenvolvimento front-end"
 draft = false
@@ -235,3 +235,7 @@ Utilizado para criar mágica em nossas páginas, aqui está o [Javascript](https
     ```    // param2 é um Objeto :)```<br />
     ```}```<br />
     Por enquanto é só :).
+
+___
+
+[Douglas Julião - DJ](https://github.com/dougjuliao)
