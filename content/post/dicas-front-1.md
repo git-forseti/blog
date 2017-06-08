@@ -21,7 +21,9 @@ então criei um tipo de série com coisas que podem nos ajudar a melhorar o cód
 
 ### Html
 Então vamos começar do ~~começo~~ nosso esqueleto o nosso [HyperText Markup Language](https://pt.wikipedia.org/wiki/HTML).
+
 * Utilize o ``` <meta charset="UTF-8"> ``` - Para evitar problemas de acentuação e caracteres específicos.
+
 * Além do meta charset existem outras meta tags que são muito boa para adicionar informações a mais para seu html,
 normalmente utilizo meta author e description.
 * Quando trabalhar com design responsivo utilize o meta viewport ``` <meta name="viewport" content="width=device-width, initial-scale=1.0">``` - Sem isso o site é tratado como apenas uma página web pequena
@@ -34,222 +36,202 @@ nós temos uma leve melhora em nosso [SEO](http://www.seomaster.com.br/blog/o-qu
 mas a questão é utilize nomes claros pois isso facilita muito para todos entenderem o código.
 * Padronize o id e class - Por favor, não saia por ai utilizando CamelCase, dash-case e underscore_case igual um lunático é muito mais fácil criar uma separação das coisas, claro exitem patterns sobre essas nomenclaturas, mas
 aqui será um gosto próprio, tente fazer assim:
-```html
-<!-- para id utilize sempre underscore e evite utilizar letras maiúsculas -->
-<div id="meu_super_id"></div>
 
-<!-- para class utilize sempre dash e tente criar até três nomes entre os traços -->
-<div class="minha-super-class"></div>
-```
+    *para id utilize sempre underscore e evite utilizar letras maiúsculas.*<br />
+    ``` <div id="meu_super_id"></div> ```
+
+    *para class utilize sempre dash e tente criar até três nomes entre os traços.*<br />
+    ``` <div class="minha-super-class"></div> ```
+
+
 * Siga sempre a mesma ordem quando adicionar os atributos em suas tags:
-```html
-<!--
-    Siga sempre essa ordem e logo após adicione os outros atributos dependendo da tag utilizada
-    como por exemplo um input:
-    <input id="" class="" data-input="" name="" placeholder="" value="">
-    o importante é seguir sempre um padrão
--->
 
-<!-- É mais fácil vizualizar isso: -->
-<div id="primeiro_id" class="segundo-class" data-atributo="terceiro-data-atributte">
-<div id="primeiro_id" class="segundo-class" data-atributo="terceiro-data-atributte">
-<div id="primeiro_id" class="segundo-class" data-atributo="terceiro-data-atributte">
+    *Siga sempre essa ordem e logo após adicione os outros atributos dependendo da tag utilizada como por exemplo um input:*<br />
+    ```<input id="" class="" data-input="" name="" placeholder="" value="">``` , *o importante é seguir sempre um padrão*.
 
+    *É mais fácil vizualizar isso:*
+    ```<div id="primeiro_id" class="segundo-class" data-atributo="terceiro-data-atributte">```
+    ```<div id="primeiro_id" class="segundo-class" data-atributo="terceiro-data-atributte">```
+    ```<div id="primeiro_id" class="segundo-class" data-atributo="terceiro-data-atributte">```
 
-<!-- Do que visualizar isso: -->
-<div id="primeiro_id" class="segundo-class" data-atributo="terceiro-data-atributte">
-<div id="primeiro_id" data-atributo="terceiro-data-atributte" class="segundo-class">
-<div data-atributo="terceiro-data-atributte" id="primeiro_id" class="segundo-class">
-```
-Sempre siga padrões, se você decide começar de um jeito, termine ele do mesmo jeito que você o começou.
-* Chame sempre seu arquivo .css no topo da página logo após a tag <title>
-* Chame sempre seu arquivo .js no fim da página dantes do fechamento da tag <\/body>
+    *Do que visualizar isso:*
+    ```<div id="primeiro_id" class="segundo-class" data-atributo="terceiro-data-atributte">```
+    ```<div id="primeiro_id" data-atributo="terceiro-data-atributte" class="segundo-class">```
+    ```<div data-atributo="terceiro-data-atributte" id="primeiro_id" class="segundo-class">```
+
+    *Sempre siga padrões, se você decide começar de um jeito, termine ele do mesmo jeito que você o começou.*
+* Chame sempre seu arquivo **.css** no topo da página logo após a tag **title**
+* Chame sempre seu arquivo **.js** no fim da página dantes do fechamento da tag **body**
 
 ### Css
 O famoso [Cascading Style Sheet](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets), é também muito complicado de deixar bem estruturado.
+
 * Como abordei acima - mantenha padrões.
+
 * Tente seguir a estrutura do css de acordo com a estrutura do html - siga por heranças e de cima para baixo:
-```css
-/* Por exemplo é bem melhor utilizar isso: */
 
-body{}
+    *Por exemplo é bem melhor utilizar isso:*<br>
+    ```body{}```<br />
 
-.header{}
-.header .menu{}
+    ```.header{}```<br />
+    ```.header .menu{}```<br />
 
-.section{}
-.section .text{}
+    ```.section{}```<br />
+    ```.section .text{}```<br />
 
-.footer{}
-.footer .copyright{}
+    ```.footer{}```<br />
+    ```.footer .copyright{}```<br />
 
-/* Do que utilizar isso: */
+    *Do que utilizar isso:*
 
-.header{}
-.footer .copyright{}
-body{}
-.footer{}
-.section .text{}
-.header .menu{}
-.section{}
+    ```.header{}```<br />
+    ```.footer .copyright{}```<br />
+    ```body{}```<br />
+    ```.footer{}```<br />
+    ```.section .text{}```<br />
+    ```.header .menu{}```<br />
+    ```.section{}```<br />
 
-```
-Pequenos detalhes fazem muita diferença.
+    *Pequenos detalhes fazem muita diferença.*<br />
 * Tente utilizar até o máximo de três itens para definir estilo a um elemento:
-```css
-/* Faça isso */
 
-.header .navigation .menu{}
-.menu .menu-li{}
-.menu .menu-li .menu-a{}
+    *Faça isso:*<br />
+    ```.header .navigation .menu{}```<br />
+    ```.menu .menu-li{}```<br />
+    ```.menu .menu-li .menu-a{}```<br />
+    *Ou apenas isso:*<br />
+    ```.menu{}```<br />
+    ```.menu-li{}```<br />
+    ```.menu-a{}```<br />
 
-/* Ou apenas isso: */
+    *Evite fazer isso:*<br />
+    ```html body .container .header .navigation .menu{}```<br />
+    ```html body .container .header .navigation .menu .menu-li{}```<br />
+    ```html body .container .header .navigation .menu .menu-li .menu-a{}```<br />
+    *Sério, evite isso, ou qualquer coisa parecida.*
 
-.menu{}
-.menu-li{}
-.menu-a{}
-
-
-/* Evite fazer isso: */
-html body .container .header .navigation .menu{}
-html body .container .header .navigation .menu .menu-li{}
-html body .container .header .navigation .menu .menu-li .menu-a{}
-/* Sério, evite isso, ou qualquer coisa parecida */
-```
 * Quando aplicar estilo a mais de um seletor sempre de uma quebra de linha
-```css
-/* Faça assim: */
-.item-1,
-.item-2,
-.item-3,
-.item-4{
-    display:block;
-    width:100%;
-}
 
-/* Evite isso, dependendo das classes utilizadas, se torna uma grande bagunça: */
-.item-1,.item-2,.item-3,.item-4{
-    display:block;
-    width:100%;
-}
-```
+    *Faça assim:*<br />
+    ```.item-1,```<br />
+    ```.item-2,```<br />
+    ```.item-3,```<br />
+    ```.item-4{```<br />
+    ```display:block;```<br />
+    ```width:100%;```<br />
+    ```}```<br />
+
+    *Evite isso, dependendo das classes utilizadas, se torna uma grande bagunça:*
+    ```.item-1,.item-2,.item-3,.item-4{```<br />
+    ```    display:block;```<br />
+    ```    width:100%;```<br />
+    ```}```<br />
+
 * Quando existe apenas um estilo aplicado, deixe o mesmo sem quebra de linha:
-```css
-.item{ display:block; }
-```
+    ```.item{ display:block; }```
 * Evite ficar utilizando o !important, na maioria das vezes quando utilizamos isso é porque estruturamos o css de maneira errada.
 ### Javascript | jQuery
 Utilizado para criar mágica em nossas páginas, aqui está o [Javascript](https://pt.wikipedia.org/wiki/JavaScript) e sua lib mais conhecida [jQuery](https://jquery.com/).
-* Siga sempre um padrão de camelcase sempre quando precisar utilizar mais de um nome para determinada, variavel, funcão, classe ou o que for.
+* Siga sempre um padrão de camelCase sempre quando precisar utilizar mais de um nome para determinada, variavel, funcão, classe ou o que for.
 * Tente ao máximo não repetir o código.
 * Declarar váriáveis (var,let,const) - apenas uma vez:
-```javascript
-//É mais performático utilizar assim:
-var a = "a",
-    b = "b",
-    c = "c",
-    d = "d";
 
-let a = "a",
-    b = "b",
-    c = "c",
-    d = "d";
+    *É mais performático utilizar assim:*<br />
+    ```var a = "a",```<br />
+    ```    b = "b",```<br />
+    ```    c = "c",```<br />
+    ```    d = "d";```<br />
 
-const a = "a",
-    b = "b",
-    c = "c",
-    d = "d";
+    ```let a = "a",```<br />
+    ```    b = "b",```<br />
+    ```    c = "c",```<br />
+    ```    d = "d";```<br />
 
-// Ou até mesmo assim:
-var a = "a", b = "b", c = "c", d = "d";
-let a = "a", b = "b", c = "c", d = "d";
-const a = "a", b = "b", c = "c", d = "d";
+    ```const a = "a",```<br />
+    ```    b = "b",```<br />
+    ```    c = "c",```<br />
+    ```    d = "d";```<br />
+    *Ou até mesmo assim:*<br />
+    ```var a = "a", b = "b", c = "c", d = "d";```<br />
+    ```let a = "a", b = "b", c = "c", d = "d";```<br />
+    ```const a = "a", b = "b", c = "c", d = "d";```<br />
 
+    *É melhor do que fazer isso:*<br />
+    ```var a = "a",```<br />
+    ```var b = "b",```<br />
+    ```var c = "c",```<br />
+    ```var d = "d"```<br />
 
-// É melhor do que fazer isso:
+    ```let a = "a",```<br />
+    ```let b = "b",```<br />
+    ```let c = "c",```<br />
+    ```let d = "d"```<br />
 
-var a = "a",
-var b = "b",
-var c = "c",
-var d = "d"
+    ```const a = "a",```<br />
+    ```const b = "b",```<br />
+    ```const c = "c",```<br />
+    ```const d = "d"```<br />
 
-let a = "a",
-let b = "b",
-let c = "c",
-let d = "d"
-
-const a = "a",
-const b = "b",
-const c = "c",
-const d = "d"
-```
 * Evite ficar chamando um mesmo elemento do DOM várias vezes, adicione ele em variáveis:
-```javascript
-//É melhor fazer isso:
 
-//Em javascript
-const meuId = document.getElementById('meu_id');
-meuId.addEventListener('click',() => { return false; });
-meuId.innerHTML = "texto";
-meuId...
+    *É melhor fazer isso:*<br />
+    ```//Em javascript```<br />
+    ```const meuId = document.getElementById('meu_id');```<br />
+    ```meuId.addEventListener('click',() => { return false; });```<br />
+    ```meuId.innerHTML = "texto";```<br />
+    ```meuId...```<br />
 
-//Em jQuery
-const meuId = $('#meu_id');
-meuId.on('click',function(){ return false; });
-meuId.html('texto');
-meuId...
+    ```//Em jQuery```<br />
+    ```const meuId = $('#meu_id');```<br />
+    ```meuId.on('click',function(){ return false; });```<br />
+    ```meuId.html('texto');```<br />
+    ```meuId...```<br />
 
-```
 * Evite a manipulação do DOM dentro de um loop, claro as vezes será preciso, mas evite essa ocasião que muitos fazem:
-```javascript
 
-let meuArray = ['texto1','texto2','texto3','texto4','texto5'];
-let meuHtml = '';
+    ```let meuArray = ['texto1','texto2','texto3','texto4','texto5'];```<br />
+    ```let meuHtml = '';```<br />
 
-//Em javascript
-const meuId = document.getElementById('meu_id');
-meuArray.map((txt) => {
-    meuHtml += txt;
-});
-meuId.innerHTML = meuHtml;
+    ```//Em javascript```<br />
+    ```const meuId = document.getElementById('meu_id');```<br />
+    ```meuArray.map((txt) => {```<br />
+    ```    meuHtml += txt;```<br />
+    ```});```<br />
+    ```meuId.innerHTML = meuHtml;```<br />
 
-//Em jQuery
-const meuId = $('#meu_id');
-$.each(meuArray,function(i,txt){
-    meuHtml += txt;
-});
-meuId.html(meuHtml);
+    ```//Em jQuery```<br />
+    ```const meuId = $('#meu_id');```<br />
+    ```$.each(meuArray,function(i,txt){```<br />
+    ```    meuHtml += txt;```<br />
+    ```});```<br />
+    ```meuId.html(meuHtml);```<br />
 
 
-// A maneira errada seria essa:
+    *A maneira errada seria essa:*
 
-//Em javascript
-meuArray.map((txt) => {
-    document.getElementById('meu_id').innerHTML += txt;
-});
+    ```//Em javascript```<br />
+    ```meuArray.map((txt) => {```<br />
+    ```    document.getElementById('meu_id').innerHTML += txt;```<br />
+    ```});```<br />
 
-//Em jQuery
-$.each(meuArray,function(i,txt){
-    $('#meu_id').append(txt);
-});
+    ```//Em jQuery```<br />
+    ```$.each(meuArray,function(i,txt){```<br />
+    ```    $('#meu_id').append(txt);```<br />
+    ```});```<br />
 
-```
 * Sempre comente os parâmetros de suas functions e quando for utilizar mais de dois parâmetros, utilize-as como um objeto:
-```javascript
 
-// Faça assim:
-/*
-    @param1: String,
-    @param2: {
-        name: String,
-        idade: Number,
-        list: Array
-    }
-*/
-function minhaFuncao(param1,param2){
-    // param1 é uma String :)
-    // param2 é um Objeto :)
-}
-
-```
-Por enquanto é só :).
+    *Faça assim:*<br />
+    ```/*```<br />
+    ```    @param1: String,```<br />
+    ```    @param2: {```<br />
+    ```        name: String,```<br />
+    ```        idade: Number,```<br />
+    ```        list: Array```<br />
+    ```    }```<br />
+    ```*/```<br />
+    ```function minhaFuncao(param1,param2){```<br />
+    ```    // param1 é uma String :)```<br />
+    ```    // param2 é um Objeto :)```<br />
+    ```}```<br />
+    Por enquanto é só :).
