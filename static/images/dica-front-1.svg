@@ -1,0 +1,23 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect rx="11" id="svg_10" height="287" width="428" y="54.7" x="84.5" stroke-width="2" stroke="#496eff" fill="#75b7f9"/>
+  <text stroke="#000" transform="matrix(1.7593220472335813,0,0,1.4285714626312256,18.949151575565338,-48.98438008502126) " font-style="italic" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_1" y="149.300001" x="118.540462" stroke-width="0" fill="#000000">FRONT</text>
+  <path stroke="#000" id="svg_3" d="m219.29219,129.229741l-20.532176,20.997558l20.532176,20.997538l-11.733924,12.007038l-32.266081,-33.004573l32.266081,-33.007096" stroke-opacity="null" stroke-width="1.5" fill="#75b5b5"/>
+  <path stroke="#000" id="svg_4" d="m372.292162,129.22974l18.665619,20.99756l-18.665619,20.99754l10.6672,12.00703l29.33281,-33.00457l-29.33281,-33.00709" stroke-opacity="null" stroke-width="1.5" fill="#75b5b5"/>
+  <text stroke="#000" transform="matrix(1.7593220472335813,0,0,1.4285714626312256,18.949151575565338,-48.98438008502126) " font-style="italic" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_5" y="206.699999" x="124.792871" stroke-width="0" fill="#000000">END</text>
+  <path stroke="#000" id="svg_6" d="m218.29219,213.22974l-20.53218,20.99756l20.53218,20.99754l-11.73392,12.00703l-32.26609,-33.00457l32.26609,-33.00709" stroke-opacity="null" stroke-width="1.5" fill="#75b5b5"/>
+  <path stroke="#000" id="svg_7" d="m371.29216,213.22974l18.66562,20.99756l-18.66562,20.99754l10.6672,12.00703l29.33281,-33.00457l-29.33281,-33.00709" stroke-opacity="null" stroke-width="1.5" fill="#75b5b5"/>
+  <rect stroke="#000000" transform="rotate(-60.331878662109375 345.3778076171876,233.42942810058602) " id="svg_9" height="12.520624" width="56.013317" y="227.169111" x="317.371167" stroke-width="2" fill="#75b5b5"/>
+  <text stroke="#496eff" transform="matrix(0.7051213979721069,0,0,0.6785714030265808,100.40616399049759,90.09543126728386) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_15" y="304.173684" x="344.754587" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Dicas #1</text>
+ </g>
+</svg>
